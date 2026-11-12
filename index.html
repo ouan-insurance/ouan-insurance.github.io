@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OUAN INSURANCE BACKUP is a private backup workflow for OUAN INSURANCE 2.0 using encrypted database backups and Google Drive.">
+  <title>OUAN INSURANCE BACKUP | สำรองข้อมูลอย่างปลอดภัย</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1412;--panel:#12221e;--line:#254238;--text:#eef8f3;--muted:#adc4b9;--green:#70e8b0;--max:900px}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#173e30 0%,var(--bg) 48%);color:var(--text);font:16px/1.8 system-ui,-apple-system,'Segoe UI',sans-serif}
+    a{color:var(--green)}.wrap{width:min(calc(100% - 36px),var(--max));margin:auto}header{padding:22px 0;border-bottom:1px solid var(--line)}nav{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}nav strong{letter-spacing:.06em}.links{display:flex;gap:20px}main{padding:78px 0 65px}.eyebrow{color:var(--green);font-size:13px;letter-spacing:.15em;font-weight:700}h1{font-size:clamp(34px,6vw,56px);line-height:1.15;margin:13px 0 20px}h2{font-size:22px;line-height:1.35;margin:0 0 14px}p{margin:0 0 16px}.lead{font-size:19px;color:var(--muted);max-width:700px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:38px}.card{padding:27px;background:var(--panel);border:1px solid var(--line);border-radius:18px}.card p,.muted{color:var(--muted)}.notice{margin-top:30px;padding:22px;border-left:3px solid var(--green);background:#101f1a;border-radius:0 12px 12px 0}footer{border-top:1px solid var(--line);padding:22px 0 36px;color:var(--muted);font-size:14px}footer .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}a:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav><strong>OUAN INSURANCE BACKUP</strong><div class="links"><a href="/">หน้าหลัก</a><a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></div></nav></div></header>
+<main class="wrap">
+  <div class="eyebrow">PRIVATE BACKUP WORKFLOW</div>
+  <h1>OUAN INSURANCE<br>BACKUP</h1>
+  <p class="lead">เครื่องมือสำรองข้อมูลส่วนตัวสำหรับระบบ OUAN INSURANCE 2.0 โดยใช้ rclone และ Google Drive เพื่อจัดเก็บสำเนาฐานข้อมูลที่เข้ารหัสไว้สำหรับการกู้คืนเมื่อจำเป็น</p>
+  <p class="lead" lang="en">A private backup workflow for OUAN INSURANCE 2.0. It uses rclone and Google Drive to store encrypted database backup files for recovery.</p>
+  <section class="cards" aria-label="การทำงานของระบบ">
+    <div class="card"><h2>01 · สำรองข้อมูล</h2><p>เจ้าของระบบสร้างไฟล์สำรองฐานข้อมูล MySQL ในเครื่องของตน โดยเข้ารหัสก่อนอัปโหลดไปยัง Google Drive</p></div>
+    <div class="card"><h2>02 · เก็บบน Google Drive</h2><p>rclone เชื่อมต่อผ่าน Google OAuth เพื่ออัปโหลด ตรวจสอบ และเรียกคืนไฟล์สำรองในโฟลเดอร์ที่กำหนดค่าไว้</p></div>
+    <div class="card"><h2>03 · กู้คืนเมื่อจำเป็น</h2><p>การกู้คืนต้องอาศัยไฟล์สำรองและกุญแจถอดรหัสที่เก็บแยกจาก Google Drive</p></div>
+  </section>
+  <div class="notice"><strong>การเข้าถึง Google Drive</strong><p>การเชื่อมต่อ rclone ปัจจุบันขอสิทธิ์เข้าถึงไฟล์ใน Google Drive แบบกว้าง (full Drive scope) แม้การใช้งานที่ตั้งใจจะจำกัดเฉพาะโฟลเดอร์สำรองข้อมูล เจ้าของบัญชีเป็นผู้อนุญาตและสามารถเพิกถอนสิทธิ์ได้ทุกเมื่อ อ่านรายละเอียดที่ <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p></div>
+</main>
+<footer><div class="wrap"><span>© 2026 OUAN INSURANCE BACKUP · Private operational utility</span><a href="/privacy.html">Privacy Policy / นโยบายความเป็นส่วนตัว</a></div></footer>
+</body>
+</html>
